@@ -1,34 +1,10 @@
-# Animal Study Browser
+# Dash App for SymAE
 
 ## About this app
 
-This app displays the results of a study comparing several treatment 
-groups and optionally calculates p-values. Data from one or more
-studies are loaded from a csv file containing the following 
-column headers (case sensitive):
+This app showcases the ability of SymAE to process synthetic passive seismic data.
+SymAE is a novel physics-embedded deep-network architecture that can easily make sense of large amounts of passive seismic datasets. SymAE learns to represent seismic noise such that its source and path effects are disentangled in order to facilitate easy monitoring of these effects. For the first time, we can now "mix and match" seismic data, i.e. synthesize data with the source of one (baseline) seismogram, and with the medium of another (monitor) one.
 
-* *study_id*
-* *group_id*
-* *group_type*
-* *reading_value*
-
-The file should have one row for each subject. If a group has
-group_type "control", it will be compared to the other groups using a t-test.
-The group_type "reference" will suppress this calculation. 
-
-The app will also recognize the following columns, providing
-some additional functionality:
-
-* *subject_id* - displayed on hover-over of data points
-* *test_article* - displayed in the study selection drop-down
-* *group_name* - replaces group_id on the x-axis
-* *reading_name* - y-axis title 
-
-Animal studies are often used to determine if a drug candidate (i.e., test article) 
-has the desired effect in disease model. For example, a study 
-could measure the ability of a compound to reduce tumor size in a mouse cancer 
-model or control blood sugar in diabetic rats. Studies are almost always designed to
-compare against untreated controls and test for statistical significance. 
 
 ## How to run this app
 
@@ -69,11 +45,6 @@ Run the app:
 python app.py
 ```
 You can run the app on your browser at http://127.0.0.1:8050
-
-
-## Screenshots
-
-![demo.png](demo.png)
 
 ## Resources
 
