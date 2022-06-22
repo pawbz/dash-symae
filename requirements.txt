@@ -59,7 +59,7 @@ mccabe==0.6.1
 mkl-fft==1.1.0
 mkl-random==1.1.1
 mkl-service==2.3.0
-numpy==1.18.5
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.2.1
 pandas @ file:///tmp/build/80754af9/pandas_1592841659173/work
